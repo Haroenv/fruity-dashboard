@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Fruity Dashboard</title>
+    <link rel='stylesheet' href='css/screen.css'>
+    <link rel='stylesheet' href='lib/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='lib/bootstrap/dist/css/bootstrap-theme.min.css'>
+    <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <nav class='nav navbar-default'>
+      <div class='container-fluid'>
+        <a class="nav navbar-left navbar-brand" href="#">Fruity Dashboard</a>
+        <ul class="pull-right">
+          <button class='btn navbar-btn' type="button" name="button" data-toggle="modal" data-target="#modal"><i class='fa fa-plus'></i></button>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Add a widget</h4>
+          </div>
+          <div class="modal-body">
+            …
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='container-fluid'>
+      <div class='widget widget-red col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+        <a href="http://raspi.local:9091">
+          <div class="row">
+            <i class='col-xs-1 col-sm-1 col-md-2 col-lg-2 fa fa-2x fa-magnet'></i>
+            <h2 class='col-xs-10 col-sm-11 col-md-10 col-lg-10 pull-right'>Transmission</h2>
+          </div>
+          <div class="row">
+            <p class='col-lg-12'>
+              Access the web torrent-client
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class='widget widget-green col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+        <a href="/sysmon">
+          <div class="row">
+            <i class='col-xs-1 col-sm-1 col-md-2 col-lg-2 fa fa-2x fa-gear'></i>
+            <h2 class='col-xs-10 col-sm-11 col-md-10 col-lg-10 pull-right'>Sysmon</h2>
+          </div>
+          <div class="row">
+            <p class='col-lg-12'>
+              System Monitor &amp; Resource Usage
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class='widget widget-black col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+        <a href="/ffrk">
+          <div class="row">
+            <i class='col-xs-1 col-sm-1 col-md-2 col-lg-2 fa fa-2x fa-calendar-o'></i>
+            <h2 class='col-xs-10 col-sm-11 col-md-10 col-lg-10 pull-right'>Event Tracker</h2>
+          </div>
+          <div class="row">
+            <p class='col-lg-12'>
+              An event tracker for Final Fantasy Record Keeper
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  <script src='lib/jquery/dist/jquery.min.js'></script>
+  <script src='lib/bootstrap/dist/js/bootstrap.min.js'></script>
+  </body>
+</html>
