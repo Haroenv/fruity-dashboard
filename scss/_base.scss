@@ -1,0 +1,14 @@
+@import '../lib/bifrost-color/bifrost';
+@import '../lib/reset-css/reset.css';
+@import 'mixins';
+@import 'vars';
+
+.widget a {
+  color: $main-white;
+
+  &:hover {
+    color: $main-white;
+    text-decoration: none;
+    text-shadow: darken($main-white, 60%) 2px 2px 2px;
+  }
+}

@@ -1,0 +1,37 @@
+@import 'base';
+
+.widget {
+  border-radius: 3px;
+  color: $main-white;
+  margin: 10px 0;
+  padding: 5px;
+
+  i {
+    margin-top: 22px;
+  }
+}
+
+.widget-orange {
+  background-color: $bittersweet;
+}
+
+.widget-blue {
+  background-color: $bali-hai;
+}
+
+.widget-red {
+  background-color: $cinnabar;
+  color: $main-white;
+}
+
+.widget-yellow {
+  background-color: $sweet-corn;
+}
+
+.widget-green {
+  background-color: $feijoa;
+}
+
+.widget-black {
+  background-color: $oil;
+}

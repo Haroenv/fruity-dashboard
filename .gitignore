@@ -1,6 +1,2 @@
 node_modules
-bower.json
-gulpfile.js
-package.json
-ROADMAP.md
-scss
+build

@@ -1,0 +1,29 @@
+{
+  "name": "bifrost-color",
+  "version": "1.0.0",
+  "homepage": "https://github.com/thibmaek/Bifrost",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thibmaek/Bifrost"
+  },
+  "authors": [
+    "Thibault Maekelbergh <thibault.maekelbergh@student.howest.be>"
+  ],
+  "description": "An easy to use beautiful color palette written in SCSS",
+  "main": "_bifrost.scss",
+  "keywords": [
+    "bifrost",
+    "color",
+    "palette",
+    "sass",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "fruity-dashboard",
+  "version": "0.0.1",
+  "authors": [
+    "Thibault Maekelbergh <thibault.maekelbergh@student.howest.be>"
+  ],
+  "description": "A dashboard for the pi",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "fontawesome": "~4.3.0",
+    "bifrost-color": "~1.0.0",
+    "reset-css": "~2.0.20110126"
+  }
+}
