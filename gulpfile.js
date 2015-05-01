@@ -32,6 +32,16 @@ gulp.task('build', function () {
     .pipe(gulp.dest('./build'));
 });
 
+gulp.task('push', function () {
+  return gulp.src('./build/**/*')
+    .pipe(sftp({
+      host: "raspi.local",
+      user: "pi",
+      pass: "raspberry",
+      remotePath: "/var/www"
+    }));
+});
+
 gulp.task('watch', ['sass'], function(){
   gulp.watch('./scss/*.scss', ['sass']);
 });
