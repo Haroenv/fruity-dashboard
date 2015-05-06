@@ -10,7 +10,7 @@ $debug-mode					: false; // toggles the debug mode
 
 $show-baseline-grid			: false; // toggle the visibility of the baseline (true/false)
 $baseline-holder 			: holder; // set the classname of the element which will show the baseline
-$grid-color 				: rgba(#000,.1); // set the baseline grid color and opacity
+$grid-color 				: rgba(#000, .1); // set the baseline grid color and opacity
 
 $alpha-font-family			: sans-serif;
 $alpha-font-size			: 16; // pixel-value
@@ -154,12 +154,12 @@ $notice-color 				: $yellow;
 
 // Greyscale of alpha-ui-color
 
-$grey-00 : hsl(hue($alpha-ui-color),10,45);
-$grey-01 : hsl(hue($alpha-ui-color),10,55);
-$grey-02 : hsl(hue($alpha-ui-color),15,65);
-$grey-03 : hsl(hue($alpha-ui-color),15,75);
-$grey-04 : hsl(hue($alpha-ui-color),15,85);
-$grey-05 : hsl(hue($alpha-ui-color),25,95);
+$grey-00 : hsl(hue($alpha-ui-color), 10, 45);
+$grey-01 : hsl(hue($alpha-ui-color), 10, 55);
+$grey-02 : hsl(hue($alpha-ui-color), 15, 65);
+$grey-03 : hsl(hue($alpha-ui-color), 15, 75);
+$grey-04 : hsl(hue($alpha-ui-color), 15, 85);
+$grey-05 : hsl(hue($alpha-ui-color), 25, 95);
 
 // Links
 
