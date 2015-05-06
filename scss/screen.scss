@@ -1,37 +1,52 @@
-@import 'base';
+//
+// Comment or uncomment whatever you need in this file.
+//
 
-.widget {
-  border-radius: 3px;
-  color: $main-white;
-  margin: 10px 0;
-  padding: 5px;
+// Settings: open and tweak this file.
 
-  i {
-    margin-top: 22px;
-  }
-}
+	@import "settings";
 
-.widget-orange {
-  background-color: bifrost(oranges, bittersweet);
-}
+// Vendor Dependencies: add things like bourbon or compass imports here.
 
-.widget-blue {
-  background-color: bifrost(blues, baliHai);
-}
+	// @import "compass";
 
-.widget-red {
-  background-color: bifrost(reds, cinnabar);
-  color: $main-white;
-}
+// Shared: do not delete any of this.
 
-.widget-yellow {
-  background-color: bifrost(yellows, sweet-corn);
-}
+	@import "shared/functions";
+	@import "shared/extends";
+	@import "shared/mixins";
+	@import "shared/grid";
+	@import "shared/typography";
+	@import "shared/ui";
 
-.widget-green {
-  background-color: bifrost(greens, feijoa);
-}
+// Patterns: feel free to include only what you need.
 
-.widget-black {
-  background-color: bifrost(blacks, oil);
-}
+	@import "patterns/reset";
+	@import "patterns/grid";
+	@import "patterns/colors";
+	@import "patterns/buttons";
+	@import "patterns/alerts";
+	@import "patterns/pagination";
+	@import "patterns/helpers";
+	@import "patterns/media";
+	@import "patterns/tables";
+	@import "patterns/icons";
+
+// Theme: feel free to delete any or all.
+
+	@import "theme/base";
+	@import "theme/typography";
+	@import "theme/forms";
+	@import "theme/debug";
+
+	// Theme Demo Modules: for boilerplate purpose only. Replace this with your own modules.
+
+		@import "theme/modules/frame";
+		@import "theme/modules/home";
+		@import "theme/modules/styleguide";
+		@import "theme/modules/styleguide-syntax";
+		@import "theme/modules/grid";
+
+// Print
+
+	@media print {@import "theme/print";}
