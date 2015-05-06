@@ -14,9 +14,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.4",
-    "fontawesome": "~4.3.0",
-    "bifrost-color": "~1.0.0",
-    "reset-css": "~2.0.20110126"
+    "bifrost-color": "~2.0.0"
   }
 }

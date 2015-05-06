@@ -12,26 +12,26 @@
 }
 
 .widget-orange {
-  background-color: $bittersweet;
+  background-color: bifrost(oranges, bittersweet);
 }
 
 .widget-blue {
-  background-color: $bali-hai;
+  background-color: bifrost(blues, baliHai);
 }
 
 .widget-red {
-  background-color: $cinnabar;
+  background-color: bifrost(reds, cinnabar);
   color: $main-white;
 }
 
 .widget-yellow {
-  background-color: $sweet-corn;
+  background-color: bifrost(yellows, sweet-corn);
 }
 
 .widget-green {
-  background-color: $feijoa;
+  background-color: bifrost(greens, feijoa);
 }
 
 .widget-black {
-  background-color: $oil;
+  background-color: bifrost(blacks, oil);
 }

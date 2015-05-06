@@ -1,39 +1,54 @@
-// Blacks, greys and variants
-$oil: rgba(51, 51, 51, 1);
-$liver: rgba(87, 75, 79, 1);
+$bifrost: (
+  blacks: (
+    oil: rgba(51, 51, 51, 1),
+    liver: rgba(87, 75, 79, 1),
+  ),
 
-// Whites, creames and variants
-$desert-storm: rgba(238, 234, 225, 1);
-$narvik: rgba(232, 229, 218, 1);
+  whites: (
+    desertStorm: rgba(238, 234, 225, 1),
+    narvik: rgba(232, 229, 218, 1),
+  ),
 
-// Reds
-$red: rgba(236, 35, 66, 1);
-$cinnabar: rgba(233, 65, 42, 1);
-$fire-engine: rgba(208, 32, 21, 1);
-$jasper: rgba(210, 55, 75, 1);
-$charm: rgba(206, 107, 127, 1);
-$brick-red: rgba(199, 40, 61, 1);
+  reds: (
+    red: rgba(236, 35, 66, 1),
+    cinnabar: rgba(233, 65, 42, 1),
+    fireEngine: rgba(208, 32, 21, 1),
+    jasper: rgba(210, 55, 75, 1),
+    charm: rgba(206, 107, 127, 1),
+    brickRed: rgba(199, 40, 61, 1),
+  ),
 
-// Pinks
-$cerise: rgba(230, 0, 58, 1);
-$hydrogen-sea: rgba(177, 9, 62, 1);
+  pinks: (
+    cerise: rgba(230, 0, 58, 1),
+    hydrogenSea: rgba(177, 9, 62, 1),
+  ),
 
-// Purples
-$red-violet: rgba(165, 95, 126, 1);
+  purples: (
+    redViolet: rgba(165, 95, 126, 1),
+  ),
 
-// Oranges
-$cadmium-orange: rgba(228, 130, 46, 1);
-$bittersweet: rgba(252, 108, 96, 1);
+  oranges: (
+    cadmiumOrange: rgba(228, 130, 46, 1),
+    bittersweet: rgba(252, 108, 96, 1),
+  ),
 
-// Greens
-$shamrock: rgba(71, 204, 165, 1);
-$feijoa: rgba(166, 228, 127, 1);
-$padua: rgba(134, 182, 141, 1);
-$vista-blue: rgba(138, 215, 177, 1);
+  greens: (
+    shamrock: rgba(71, 204, 165, 1),
+    feijoa: rgba(166, 228, 127, 1),
+    padua: rgba(134, 182, 141, 1),
+    vistaBlue: rgba(138, 215, 177, 1),
+  ),
 
-// Yellows
-$sweet-corn: rgba(247, 224, 118, 1);
+  yellows: (
+    sweetCorn: rgba(247, 224, 118, 1),
+  ),
 
-// Blues
-$light-sea-green: rgba(25, 163, 162, 1);
-$bali-hai: rgba(132, 154, 177, 1);
+  blues: (
+    lightSeaGreen: rgba(25, 163, 162, 1),
+    baliHai: rgba(132, 154, 177, 1),
+  ),
+);
+
+@function bifrost($base-color, $tone: '') {
+  @return map-get(map-get($bifrost, $base-color), $tone);
+}
