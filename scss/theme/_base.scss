@@ -5,7 +5,7 @@
 //
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -55,4 +55,14 @@ hr {
 img {
 	vertical-align: top;
 	border: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  width: 90%;
 }

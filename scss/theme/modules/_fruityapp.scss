@@ -1,0 +1,51 @@
+.app-nav {
+  @include box-(12, 1, 1);
+  background-color: bifrost(blacks, oil);
+
+  .nav-links {
+    @include list-nav();
+    padding: 20px 0;
+  }
+
+  .nav-btn {
+    @extend %btn;
+    @include last-col();
+    @include btn-sm();
+    @include btn-color(bifrost(reds, jasper), bifrost(reds, cinnabar));
+  }
+}
+
+.widget {
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.widget-orange {
+  @include box-(3, 1, 1);
+  background-color: bifrost(oranges, bittersweet);
+}
+
+.widget-blue {
+  @include box-(3, 1, 1);
+  background-color: bifrost(blues, baliHai);
+}
+
+.widget-red {
+  @include box-(3, 1, 1);
+  background-color: bifrost(reds, cinnabar);
+}
+
+.widget-yellow {
+  @include box-(3, 1, 1);
+  background-color: bifrost(yellows, sweet-corn);
+}
+
+.widget-green {
+  @include box-(3, 1, 1);
+  background-color: bifrost(greens, feijoa);
+}
+
+.widget-black {
+  @include box-(3, 1, 1);
+  background-color: bifrost(blacks, oil);
+}
