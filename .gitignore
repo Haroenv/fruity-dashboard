@@ -1,6 +1,5 @@
 node_modules
 lib
 build_dist
-css/screen.min.css
-css/screen.css
+css/
 img
