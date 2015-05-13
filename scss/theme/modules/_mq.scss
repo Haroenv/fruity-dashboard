@@ -1,0 +1,46 @@
+.app-nav {
+  @include box-(12, 0, 0);
+}
+
+.row-1 {
+  i {
+    @include box-(1, 0, 1);
+  }
+
+  h2 {
+    @include box-(9, 1, 0);
+  }
+}
+
+.row p {
+  @include box-(12, 0, 0);
+}
+
+// iPhone
+@media (min-width: $bp1) {
+  .widget {
+    @include box-(11, 1, 1);
+
+    .row-1 h2 {
+      @include box-(10, 1, 0);
+    }
+  }
+}
+
+// iPad
+@media (min-width: $bp2) {
+  .widget .row-1 h2 {
+    @include box-(10, 0, 1);
+  }
+}
+
+// Desktop
+@media (min-width: $bp4) {
+  .widget {
+    @include box-(3, 1, 1);
+
+    .row-1 h2 {
+      @include box-(9, 1, 1);
+    }
+  }
+}

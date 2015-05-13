@@ -1,51 +1,77 @@
+@import 'mq';
+
 .app-nav {
-  @include box-(12, 1, 1);
   background-color: bifrost(blacks, oil);
 
   .nav-links {
     @include list-nav();
     padding: 20px 0;
+    margin-left: 30px;
   }
 
   .nav-btn {
     @extend %btn;
-    @include last-col();
     @include btn-sm();
     @include btn-color(bifrost(reds, jasper), bifrost(reds, cinnabar));
+    margin-left: 50px;
   }
 }
 
 .widget {
+  @extend %clearfix;
   border-radius: 3px;
-  margin-top: 20px;
+  margin: 15px 20px;
+  transition: all .2s ease-in-out;
+
+  .row-1 {
+    padding-top: 20px;
+  }
 }
 
 .widget-orange {
-  @include box-(3, 1, 1);
   background-color: bifrost(oranges, bittersweet);
+
+  &:hover {
+    background-color: darken(bifrost(oranges, bittersweet), 10%);
+  }
 }
 
 .widget-blue {
-  @include box-(3, 1, 1);
   background-color: bifrost(blues, baliHai);
+
+  &:hover {
+    background-color: darken(bifrost(blues, baliHai), 10%);
+  }
 }
 
 .widget-red {
-  @include box-(3, 1, 1);
   background-color: bifrost(reds, cinnabar);
+
+  &:hover {
+    background-color: darken(bifrost(reds, cinnabar), 10%);
+  }
 }
 
 .widget-yellow {
-  @include box-(3, 1, 1);
-  background-color: bifrost(yellows, sweet-corn);
+  background-color: bifrost(yellows, sweetCorn);
+
+  &:hover {
+    background-color: darken(bifrost(yellows, sweetCorn), 10%);
+  }
 }
 
 .widget-green {
-  @include box-(3, 1, 1);
   background-color: bifrost(greens, feijoa);
+
+  &:hover {
+    background-color: darken(bifrost(greens, feijoa), 10%);
+  }
 }
 
 .widget-black {
-  @include box-(3, 1, 1);
   background-color: bifrost(blacks, oil);
+
+  &:hover {
+    background-color: darken(bifrost(blacks, oil), 10%);
+  }
 }
