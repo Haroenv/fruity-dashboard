@@ -2,15 +2,15 @@
 
 I started this project to run a dashboard on my Pi as a frontend to the various services I was using (torrent, web projects, etc). Though it's called fruity-dashboard and I relate it to Raspberry Pi, it actually is really independent of the pi. This could be installed on any apache or nginx server.
 
-Install the necessary devDependencies & frontend libraries with `npm install && bower install`
+Install the necessary devDependencies & frontend libraries with `npm install && bower install`
 
 ## Development
 
 #### gulp tasks
 
-- `gulp watch` : compiles scss and starts a browser-sync server with livereload at :3000
-- `gulp build` : builds the production version to a `build_dist` folder. You can modify the foldername at the top of the gulpfile.
-- `gulp push` : pushes to a server with the credentials provided. The default Raspberry Pi credentials and port 22 (SFTP) have already been added.
+- `gulp watch` : compiles scss and starts a browser-sync server with livereload at :3000
+- `gulp build` : builds the production version to a `build_dist` folder. You can modify the foldername at the top of the gulpfile.
+- `gulp push` : pushes to a server with the credentials provided. The default Raspberry Pi credentials and port 22 (SFTP) have already been added.
 
 
 #### Dependencies
@@ -23,7 +23,7 @@ I chose to experiment with [chopstick](https://github.com/getchopstick/chopstick
 
 It's a expansive but yet really modular SCSS framework for styling and creating components.
 
-Take a good look at their docs (has some learning curve to it) and make edits only in `scss/theme/modules`. The main entry point for the widgets is `_fruityapp.scss` inside the modules folder.
+Take a good look at their docs (has some learning curve to it) and make edits only in `scss/theme/modules`. The main entry point for the widgets is `_fruityapp.scss` inside the modules folder.
 
 
 
