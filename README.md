@@ -50,7 +50,7 @@ This isn't really anywhere near being release version. Currently only the fronte
 
 The MIT License (MIT)
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2015 Thibault Maekelbergh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 
